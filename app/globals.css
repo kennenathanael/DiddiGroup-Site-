@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-red: #e4281c;
+  --color-red-dark: #c11f14;
+  --color-green: #00913b;
+  --color-green-dark: #006f2d;
+  --color-ink: #14181b;
+  --color-ink-2: #1d2327;
+  --color-paper: #f7f6f2;
+  --color-body: #4a5258;
+  --color-line: #e3e1da;
+  --color-sand: #c9a45c;
+
+  --font-display: var(--font-manrope), system-ui, sans-serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-green);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+.container-x {
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+@media (min-width: 768px) {
+  .container-x { padding-inline: 32px; }
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
