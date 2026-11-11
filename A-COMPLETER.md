@@ -53,5 +53,5 @@ Ces images n'ont pas encore pu être générées : le quota de crédits Figma AI
 Les prompts de ces images sont dans `PROMPT-DIDDI-GROUP.md`, section 6.
 
 ## 9. Technique
-- **Formulaire de contact** : l'envoi d'email n'est pas encore branché (`app/api/contact/route.ts`). Les messages sont seulement journalisés côté serveur. Il faut le brancher à un service d'envoi (Resend, SMTP…).
+- **Formulaire de contact** : le site est statique (GitHub Pages), donc sans serveur. Pour recevoir les messages par email, créez un formulaire gratuit sur formspree.io, puis ajoutez son URL (ex. `https://formspree.io/f/xxxx`) dans GitHub : *Settings → Secrets and variables → Actions → Variables*, sous le nom `FORM_ENDPOINT`. Sans cette URL, le bouton « Envoyer » ouvre la messagerie du visiteur avec le message pré-rempli. Pour les candidatures, le CV est envoyé directement par email.
 - **Version anglaise** : pas encore faite. Tout le contenu est centralisé dans `content/site.ts`, ce qui permet d'ajouter une version EN.

@@ -5,6 +5,8 @@ import Reveal from "@/components/Reveal";
 import { ButtonLink, Eyebrow, PageHero, Txt } from "@/components/ui";
 import { sectors } from "@/content/site";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return sectors.map((s) => ({ slug: s.slug }));
 }

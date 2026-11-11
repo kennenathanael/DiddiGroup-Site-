@@ -8,8 +8,7 @@ export const metadata: Metadata = {
   description: "Contactez DIDDI GROUP : siège social à Garoua-Boulaï, bureau opérationnel à Douala-Bonapriso.",
 };
 
-export default async function ContactPage({ searchParams }: PageProps<"/contact">) {
-  const { objet } = await searchParams;
+export default function ContactPage() {
   const offices = [company.headOffice, company.operationalOffice];
 
   return (
@@ -28,7 +27,7 @@ export default async function ContactPage({ searchParams }: PageProps<"/contact"
             <Eyebrow>Formulaire</Eyebrow>
             <h2 className="mt-5 text-3xl font-extrabold">Envoyez-nous un message</h2>
             <div className="mt-10">
-              <ContactForm defaultSubject={typeof objet === "string" ? objet : ""} />
+              <ContactForm />
             </div>
           </div>
 

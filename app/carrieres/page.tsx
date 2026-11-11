@@ -3,6 +3,7 @@ import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 import Reveal from "@/components/Reveal";
 import { Eyebrow, PageHero, Todo } from "@/components/ui";
+import { company } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Carrières",
@@ -63,9 +64,13 @@ export default function CarrieresPage() {
         <div className="container-x max-w-3xl">
           <Eyebrow>Candidature spontanée</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold">Envoyez-nous votre candidature</h2>
-          <p className="mt-3 text-body">Présentez-vous et joignez votre CV : nous étudions chaque candidature avec attention.</p>
+          <p className="mt-3 text-body">
+            Présentez-vous ci-dessous, puis envoyez votre CV à{" "}
+            <a className="font-semibold text-green underline" href={`mailto:${company.email}?subject=${encodeURIComponent("Candidature spontanée")}`}>{company.email}</a>.
+            Nous étudions chaque candidature avec attention.
+          </p>
           <div className="mt-10">
-            <ContactForm defaultSubject="Recrutement" withCv />
+            <ContactForm defaultSubject="Recrutement" />
           </div>
         </div>
       </section>

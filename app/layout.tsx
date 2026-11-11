@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { company } from "@/content/site";
+import { asset } from "@/lib/paths";
 
 const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope", display: "swap" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_CM",
     siteName: company.name,
-    images: [{ url: "/images/hero-corridor.png", width: 1376, height: 768, alt: "DIDDI GROUP" }],
+    images: [{ url: asset("/images/hero-corridor.png"), width: 1376, height: 768, alt: "DIDDI GROUP" }],
   },
-  icons: { icon: "/logo-diddi-group.png" },
+  icons: { icon: asset("/logo-diddi-group.png") },
 };
 
 const jsonLd = {

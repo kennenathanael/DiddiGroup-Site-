@@ -5,6 +5,9 @@ import { notFound } from "next/navigation";
 import NewsCard from "@/components/NewsCard";
 import { Txt } from "@/components/ui";
 import { news } from "@/content/site";
+import { asset } from "@/lib/paths";
+
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   return news.map((n) => ({ slug: n.slug }));
@@ -13,7 +16,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<"/actualites/[slug]">): Promise<Metadata> {
   const { slug } = await params;
   const item = news.find((n) => n.slug === slug);
-  return item ? { title: item.title, description: item.excerpt, openGraph: { images: [item.image] } } : {};
+  return item ? { title: item.title, description: item.excerpt, openGraph: { images: [asset(item.image)] } } : {};
 }
 
 export default async function ArticlePage({ params }: PageProps<"/actualites/[slug]">) {

@@ -27,7 +27,8 @@ export const company = {
   // À VALIDER : numéro WhatsApp supposé identique au téléphone.
   whatsapp: "237672870085",
   email: "contact@diddi-group.com",
-  url: "https://diddi-group.com",
+  // URL publique du site (sans "/" final). Le workflow GitHub Pages la remplace.
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://diddi-group.com",
   rccm: TODO("RCCM"),
   niu: TODO("NIU"),
   socials: [

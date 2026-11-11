@@ -12,8 +12,8 @@ Le site s'ouvre sur http://localhost:3002.
 ## Build de production
 ```bash
 npm run build
-npm start
 ```
+Le site statique est généré dans `out/`.
 
 ## Modifier le contenu
 Tous les textes, chiffres, secteurs, filiales, produits et actualités se trouvent dans **`content/site.ts`**.
@@ -33,11 +33,17 @@ La liste complète des informations manquantes est dans **`A-COMPLETER.md`**.
 | `/produits` | Les familles de produits |
 | `/actualites` et `/actualites/[article]` | Les actualités |
 | `/carrieres` | Carrières et candidature spontanée |
-| `/contact` | Formulaire, adresses et carte |
+| `/contact` | Formulaire (via Formspree ou messagerie), adresses et carte |
 | `/mentions-legales`, `/confidentialite` | Pages légales |
 
-## Déploiement
-- **Vercel** (recommandé) : importer le dossier, sans configuration particulière. Ensuite, faire pointer le DNS de diddi-group.com vers Vercel.
-- **Serveur Node** (hébergement actuel si Node est disponible) : `npm run build`, puis `npm start` derrière un reverse proxy.
+## Déploiement (GitHub Pages)
+Le site est exporté en **statique** (`output: "export"` → dossier `out/`).
+1. Une seule fois : dans le dépôt GitHub, *Settings → Pages → Source* = **GitHub Actions**.
+2. À chaque push sur `main`, le workflow `.github/workflows/deploy.yml` compile et publie le site sur `https://kennenathanael.github.io/DiddiGroup-Site-/`.
+3. (Optionnel) Variable `FORM_ENDPOINT` (URL Formspree) pour recevoir les messages du formulaire. Voir A-COMPLETER.md.
+
+**Domaine diddi-group.com** : dans *Settings → Pages → Custom domain*, saisissez le domaine, puis supprimez les lignes `NEXT_PUBLIC_BASE_PATH` et `NEXT_PUBLIC_SITE_URL` du workflow (le site est alors servi à la racine).
+
+Tester l'export en local : `npm run build`, puis servir le dossier `out/` avec n'importe quel serveur statique.
 
 L'ancien WordPress de diddi-group.com expose publiquement le nom de son compte administrateur via `/wp-json/wp/v2/users`. Il faut le désactiver ou le supprimer au moment de la bascule.
