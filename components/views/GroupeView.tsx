@@ -11,7 +11,7 @@ export default function GroupeView({ lang }: { lang: Lang }) {
 
   return (
     <>
-      <PageHero eyebrow={t.eyebrow} title={t.title} intro={c.description} image="/images/equipe-reunion.png" imageAlt="" />
+      <PageHero eyebrow={t.eyebrow} title={t.title} intro={c.description} image="/images/equipe-reunion.webp" imageAlt="" />
 
       {/* Chiffres */}
       <section className="border-b border-line">
@@ -98,7 +98,7 @@ export default function GroupeView({ lang }: { lang: Lang }) {
       {/* Engagement */}
       <section id="engagement" className="relative overflow-hidden bg-ink py-24 md:py-32">
         <div className="absolute inset-0 opacity-25">
-          <Image src="/images/agriculture.png" alt="" fill sizes="100vw" className="object-cover" />
+          <Image src="/images/agriculture.webp" alt="" fill sizes="100vw" className="object-cover" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-ink via-ink/90 to-ink" aria-hidden />
         <div className="container-x relative">
@@ -136,7 +136,7 @@ export default function GroupeView({ lang }: { lang: Lang }) {
       <section className="bg-paper py-24 md:py-32">
         <div className="container-x grid items-center gap-14 lg:grid-cols-2">
           <Reveal className="relative aspect-[4/3] overflow-hidden rounded-lg">
-            <Image src="/images/siege-chantier.png" alt="" fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover" />
+            <Image src="/images/siege-chantier.webp" alt="" fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover" />
           </Reveal>
           <Reveal delay={0.1}>
             <Eyebrow>{t.hqEyebrow}</Eyebrow>

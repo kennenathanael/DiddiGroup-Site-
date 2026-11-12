@@ -6,7 +6,7 @@ const sectors: Sector[] = [
     slug: "commerce-distribution",
     title: "Trade, import-export & distribution",
     short: "Food and consumer goods across Cameroon and the Central African Republic.",
-    image: "/images/logistique-entrepot.png",
+    image: "/images/logistique-entrepot.webp",
     imageAlt: "Distribution warehouse with goods on pallets",
     companies: ["OMC SARL", "Trading Africa SA", "ATR SARL"],
     intro:
@@ -24,7 +24,7 @@ const sectors: Sector[] = [
     slug: "transport-logistique",
     title: "Transport & logistics",
     short: "Over 40 trucks on the corridors of Cameroon, Chad, the CAR and Congo.",
-    image: "/images/tlr-flotte.png",
+    image: "/images/tlr-flotte.webp",
     imageAlt: "Fleet of road tractors lined up in a logistics yard",
     companies: ["TLR SARL"],
     intro:
@@ -41,7 +41,7 @@ const sectors: Sector[] = [
     slug: "sucre",
     title: "Sugar",
     short: "Sourcing and marketing of brown and white sugar.",
-    image: "/images/sucre-conditionnement.png",
+    image: "/images/sucre-conditionnement.webp",
     imageAlt: "Sugar packaging line",
     companies: ["DISUCO SARL"],
     intro:
@@ -57,7 +57,7 @@ const sectors: Sector[] = [
     slug: "cafe-torrefaction",
     title: "Coffee roasting",
     short: "A roasting plant in Douala and two brands: Café Bassoro and Café Diddi.",
-    image: "/images/cafe-torrefaction.png",
+    image: "/images/cafe-torrefaction.webp",
     imageAlt: "Freshly roasted coffee beans",
     companies: ["SCTC SARL"],
     intro:
@@ -74,7 +74,7 @@ const sectors: Sector[] = [
     slug: "agriculture",
     title: "Agriculture",
     short: "Maize, cassava and groundnuts on more than 4,500 hectares.",
-    image: "/images/agriculture.png",
+    image: "/images/agriculture.webp",
     imageAlt: "Large maize field at sunset",
     companies: ["DEMRI YONO Cooperative"],
     intro:
@@ -86,7 +86,7 @@ const sectors: Sector[] = [
     slug: "distribution-petroliere",
     title: "Petroleum products",
     short: "Fuels, cooking gas and lubricants; service stations.",
-    image: "/images/petrole-station.png",
+    image: "/images/petrole-station.webp",
     imageAlt: "Modern service station at dusk",
     companies: ["Golden Petroleum SA", "ATR SARL"],
     intro:
@@ -102,7 +102,7 @@ const sectors: Sector[] = [
     slug: "mines-forets",
     title: "Mining & forestry",
     short: "Developing mineral and forest resources in Cameroon and the CAR.",
-    image: "/images/mines-forets.png",
+    image: "/images/mines-forets.webp",
     imageAlt: "Log yard at the edge of a tropical forest",
     companies: ["SMI SA"],
     intro:
@@ -118,7 +118,7 @@ const sectors: Sector[] = [
     slug: "btp-immobilier",
     title: "Construction & real estate",
     short: "Infrastructure, buildings, public works and property development.",
-    image: "/images/btp-chantier.png",
+    image: "/images/btp-chantier.webp",
     imageAlt: "Construction site of a public building",
     companies: ["Diddi Builder SARL"],
     intro:
@@ -169,7 +169,7 @@ const news: NewsItem[] = [
       "On Friday 29 August, DIDDI GROUP's distribution company completed the first wave of its sales training programme in Garoua-Boulaï, home to its main distribution centre.",
       "This immersion programme reflects the group's commitment to training and to developing its teams' skills.",
     ],
-    image: "/images/equipe-reunion.png",
+    image: "/images/equipe-reunion.webp",
   },
   {
     slug: "tlr-nouveaux-tracteurs-sinotruk",
@@ -181,7 +181,7 @@ const news: NewsItem[] = [
       "TLR SARL, DIDDI GROUP's transport and logistics company, is strengthening its fleet with around ten new Sinotruk road tractors.",
       "With more than 40 owned trucks, TLR serves the main national and regional corridors, including routes to Chad, the Central African Republic and Congo.",
     ],
-    image: "/images/tlr-flotte.png",
+    image: "/images/tlr-flotte.webp",
   },
   {
     slug: "nouveau-siege-garoua-boulai",
@@ -190,7 +190,7 @@ const news: NewsItem[] = [
     title: "DIDDI GROUP prepares to open its new headquarters in Garoua-Boulaï",
     excerpt: "The group continues to grow with the construction of a new head office in Garoua-Boulaï, its home town.",
     body: ["DIDDI GROUP continues to grow with the construction of a new head office in Garoua-Boulaï, the town where the group was born in 2005."],
-    image: "/images/siege-chantier.png",
+    image: "/images/siege-chantier.webp",
   },
 ];
 

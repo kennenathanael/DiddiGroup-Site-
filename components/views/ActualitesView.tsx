@@ -7,7 +7,7 @@ export default function ActualitesView({ lang }: { lang: Lang }) {
   const t = c.ui.actualites;
   return (
     <>
-      <PageHero eyebrow={t.eyebrow} title={t.title} intro={t.intro} image="/images/douala-skyline.png" imageAlt="" />
+      <PageHero eyebrow={t.eyebrow} title={t.title} intro={t.intro} image="/images/douala-skyline.webp" imageAlt="" />
       <NewsList lang={lang} />
     </>
   );

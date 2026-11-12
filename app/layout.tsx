@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: contact.name,
-    images: [{ url: asset("/images/hero-corridor.png"), width: 1376, height: 768, alt: "DIDDI GROUP" }],
+    images: [{ url: asset("/images/hero-corridor.webp"), width: 1376, height: 768, alt: "DIDDI GROUP" }],
   },
   icons: { icon: asset("/logo-diddi-group.png") },
 };

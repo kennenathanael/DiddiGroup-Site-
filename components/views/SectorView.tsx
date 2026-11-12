@@ -73,7 +73,7 @@ export default function SectorView({ lang, slug }: { lang: Lang; slug: string })
 
       {sector.slug === "sucre" && (
         <section className="relative overflow-hidden bg-ink py-24">
-          <Image src="/images/raffinerie-projet.png" alt={c.project.imageAlt} fill sizes="100vw" className="object-cover opacity-40" />
+          <Image src="/images/raffinerie-projet.webp" alt={c.project.imageAlt} fill sizes="100vw" className="object-cover opacity-40" />
           <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-transparent" aria-hidden />
           <div className="container-x relative max-w-2xl">
             <Eyebrow onDark>{t.projectTitle}</Eyebrow>

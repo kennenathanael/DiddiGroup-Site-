@@ -12,7 +12,7 @@ export default function ContactView({ lang }: { lang: Lang }) {
 
   return (
     <>
-      <PageHero eyebrow={t.eyebrow} title={t.title} intro={t.intro} image="/images/douala-skyline.png" imageAlt="" />
+      <PageHero eyebrow={t.eyebrow} title={t.title} intro={t.intro} image="/images/douala-skyline.webp" imageAlt="" />
 
       <section className="py-24">
         <div className="container-x grid gap-16 lg:grid-cols-[1.4fr_1fr]">

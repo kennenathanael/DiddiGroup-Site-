@@ -7,7 +7,7 @@ export default function CarrieresView({ lang }: { lang: Lang }) {
   const t = getContent(lang).ui.carrieres;
   return (
     <>
-      <PageHero eyebrow={t.eyebrow} title={t.title} intro={t.intro} image="/images/logistique-entrepot.png" imageAlt="" />
+      <PageHero eyebrow={t.eyebrow} title={t.title} intro={t.intro} image="/images/logistique-entrepot.webp" imageAlt="" />
 
       <section className="py-24">
         <div className="container-x grid items-center gap-14 lg:grid-cols-2">
@@ -27,7 +27,7 @@ export default function CarrieresView({ lang }: { lang: Lang }) {
             </ul>
           </Reveal>
           <Reveal delay={0.1} className="relative aspect-[4/3] overflow-hidden rounded-lg">
-            <Image src="/images/equipe-reunion.png" alt="" fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover" />
+            <Image src="/images/equipe-reunion.webp" alt="" fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover" />
           </Reveal>
         </div>
       </section>

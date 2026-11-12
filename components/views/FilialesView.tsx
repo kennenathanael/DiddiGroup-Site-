@@ -37,7 +37,7 @@ export default function FilialesView({ lang }: { lang: Lang }) {
   const t = c.ui.filiales;
   return (
     <>
-      <PageHero eyebrow={t.eyebrow} title={t.title} intro={t.intro} image="/images/logistique-entrepot.png" imageAlt="" />
+      <PageHero eyebrow={t.eyebrow} title={t.title} intro={t.intro} image="/images/logistique-entrepot.webp" imageAlt="" />
       <section className="bg-paper py-24">
         <div className="container-x">
           <Reveal className="mx-auto mb-12 flex max-w-md flex-col items-center rounded-lg border border-line bg-white p-6 text-center">

@@ -46,7 +46,7 @@ const sectors: Sector[] = [
     slug: "commerce-distribution",
     title: "Commerce, import-export & distribution",
     short: "Produits alimentaires et de grande consommation au Cameroun et en Centrafrique.",
-    image: "/images/logistique-entrepot.png",
+    image: "/images/logistique-entrepot.webp",
     imageAlt: "Entrepôt de distribution avec marchandises sur palettes",
     companies: ["OMC SARL", "Trading Africa SA", "ATR SARL"],
     intro:
@@ -64,7 +64,7 @@ const sectors: Sector[] = [
     slug: "transport-logistique",
     title: "Transport & logistique",
     short: "Plus de 40 camions sur les corridors du Cameroun, du Tchad, de la RCA et du Congo.",
-    image: "/images/tlr-flotte.png",
+    image: "/images/tlr-flotte.webp",
     imageAlt: "Flotte de tracteurs routiers alignés dans un parc logistique",
     companies: ["TLR SARL"],
     intro:
@@ -81,7 +81,7 @@ const sectors: Sector[] = [
     slug: "sucre",
     title: "Sucre",
     short: "Approvisionnement et commercialisation de sucre roux et blanc.",
-    image: "/images/sucre-conditionnement.png",
+    image: "/images/sucre-conditionnement.webp",
     imageAlt: "Ligne de conditionnement de sucre",
     companies: ["DISUCO SARL"],
     intro:
@@ -97,7 +97,7 @@ const sectors: Sector[] = [
     slug: "cafe-torrefaction",
     title: "Café & torréfaction",
     short: "Torréfaction à Douala et deux marques : Café Bassoro et Café Diddi.",
-    image: "/images/cafe-torrefaction.png",
+    image: "/images/cafe-torrefaction.webp",
     imageAlt: "Grains de café fraîchement torréfiés",
     companies: ["SCTC SARL"],
     intro:
@@ -114,7 +114,7 @@ const sectors: Sector[] = [
     slug: "agriculture",
     title: "Agriculture",
     short: "Maïs, manioc et arachide sur plus de 4 500 hectares.",
-    image: "/images/agriculture.png",
+    image: "/images/agriculture.webp",
     imageAlt: "Grand champ de maïs au coucher du soleil",
     companies: ["Coopérative DEMRI YONO"],
     intro:
@@ -126,7 +126,7 @@ const sectors: Sector[] = [
     slug: "distribution-petroliere",
     title: "Produits pétroliers",
     short: "Carburants, gaz domestique et lubrifiants ; stations-service.",
-    image: "/images/petrole-station.png",
+    image: "/images/petrole-station.webp",
     imageAlt: "Station-service moderne au crépuscule",
     companies: ["Golden Petroleum SA", "ATR SARL"],
     intro:
@@ -142,7 +142,7 @@ const sectors: Sector[] = [
     slug: "mines-forets",
     title: "Mines & forêts",
     short: "Valorisation des ressources minières et forestières au Cameroun et en RCA.",
-    image: "/images/mines-forets.png",
+    image: "/images/mines-forets.webp",
     imageAlt: "Parc à grumes en lisière de forêt tropicale",
     companies: ["SMI SA"],
     intro:
@@ -158,7 +158,7 @@ const sectors: Sector[] = [
     slug: "btp-immobilier",
     title: "BTP & immobilier",
     short: "Infrastructures, bâtiments, ouvrages publics et promotion immobilière.",
-    image: "/images/btp-chantier.png",
+    image: "/images/btp-chantier.webp",
     imageAlt: "Chantier de construction d'un bâtiment public",
     companies: ["Diddi Builder SARL"],
     intro:
@@ -209,7 +209,7 @@ const news: NewsItem[] = [
       "La filiale de distribution de DIDDI GROUP a clôturé, le vendredi 29 août, la première vague de son programme de formation commerciale à Garoua-Boulaï, où se trouve son principal centre de distribution.",
       "Ce programme d'immersion illustre l'engagement du groupe en faveur de la formation et du développement des compétences de ses équipes.",
     ],
-    image: "/images/equipe-reunion.png",
+    image: "/images/equipe-reunion.webp",
   },
   {
     slug: "tlr-nouveaux-tracteurs-sinotruk",
@@ -221,7 +221,7 @@ const news: NewsItem[] = [
       "TLR SARL, filiale transport et logistique de DIDDI GROUP, renforce sa flotte avec une dizaine de tracteurs routiers neufs de marque Sinotruk.",
       "Avec plus de 40 camions en propriété, TLR dessert les principaux corridors nationaux et sous-régionaux, notamment vers le Tchad, la République centrafricaine et le Congo.",
     ],
-    image: "/images/tlr-flotte.png",
+    image: "/images/tlr-flotte.webp",
   },
   {
     slug: "nouveau-siege-garoua-boulai",
@@ -232,7 +232,7 @@ const news: NewsItem[] = [
     body: [
       "DIDDI GROUP poursuit son expansion avec la construction d'un nouveau siège social à Garoua-Boulaï, la ville où le groupe est né en 2005.",
     ],
-    image: "/images/siege-chantier.png",
+    image: "/images/siege-chantier.webp",
   },
 ];
 

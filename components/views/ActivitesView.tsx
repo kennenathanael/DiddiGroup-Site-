@@ -8,7 +8,7 @@ export default function ActivitesView({ lang }: { lang: Lang }) {
   const t = c.ui.activites;
   return (
     <>
-      <PageHero eyebrow={t.eyebrow} title={t.title} intro={t.intro} image="/images/import-export-port.png" imageAlt="" />
+      <PageHero eyebrow={t.eyebrow} title={t.title} intro={t.intro} image="/images/import-export-port.webp" imageAlt="" />
       <section className="bg-paper py-24">
         <div className="container-x">
           <Reveal>

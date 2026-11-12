@@ -25,7 +25,7 @@ export default function ProduitsView({ lang }: { lang: Lang }) {
   const partners = c.brands.filter((b) => b.partner);
   return (
     <>
-      <PageHero eyebrow={t.eyebrow} title={t.title} intro={t.intro} image="/images/cafe-torrefaction.png" imageAlt="" />
+      <PageHero eyebrow={t.eyebrow} title={t.title} intro={t.intro} image="/images/cafe-torrefaction.webp" imageAlt="" />
       <section className="py-24">
         <div className="container-x">
           <Reveal><Eyebrow>{t.own}</Eyebrow></Reveal>

@@ -18,7 +18,7 @@ export default function HomeView({ lang }: { lang: Lang }) {
     <>
       {/* Hero */}
       <section className="relative flex min-h-[100svh] items-end overflow-hidden bg-ink pb-24 pt-40">
-        <Media src="/images/hero-corridor.png" alt="" preload />
+        <Media src="/images/hero-corridor.webp" alt="" preload />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/55 to-ink/10" aria-hidden />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" aria-hidden />
         <div className="container-x relative">
@@ -62,7 +62,7 @@ export default function HomeView({ lang }: { lang: Lang }) {
           </Reveal>
           <Reveal delay={0.15} className="relative">
             <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
-              <Image src="/images/equipe-reunion.png" alt="" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+              <Image src="/images/equipe-reunion.webp" alt="" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
             </div>
             <div className="absolute -bottom-8 -left-4 hidden w-60 rounded-lg bg-green p-6 text-white shadow-xl sm:block md:-left-8">
               <p className="font-display text-4xl font-extrabold">9</p>
@@ -94,7 +94,7 @@ export default function HomeView({ lang }: { lang: Lang }) {
 
       {/* Projet raffinerie */}
       <section className="relative overflow-hidden bg-ink py-28 md:py-36">
-        <Media src="/images/raffinerie-projet.png" alt={c.project.imageAlt} />
+        <Media src="/images/raffinerie-projet.webp" alt={c.project.imageAlt} />
         <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/20" aria-hidden />
         <div className="container-x relative">
           <Reveal className="max-w-xl">
@@ -192,7 +192,7 @@ export default function HomeView({ lang }: { lang: Lang }) {
 
       {/* CTA final */}
       <section className="relative overflow-hidden bg-ink py-28 md:py-36">
-        <Media src="/images/douala-skyline.png" alt="" />
+        <Media src="/images/douala-skyline.webp" alt="" />
         <div className="absolute inset-0 bg-ink/70" aria-hidden />
         <div className="container-x relative text-center">
           <Reveal>
