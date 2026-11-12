@@ -4,23 +4,21 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import { company } from "@/content/site";
+import { contact, getContent } from "@/content";
 import { asset } from "@/lib/paths";
 
 const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope", display: "swap" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
+const fr = getContent("fr");
+
 export const metadata: Metadata = {
-  metadataBase: new URL(company.url),
-  title: {
-    default: "DIDDI GROUP — Conglomérat camerounais diversifié",
-    template: "%s | DIDDI GROUP",
-  },
-  description: company.description,
+  metadataBase: new URL(contact.url),
+  title: { default: fr.meta.siteTitle, template: "%s | DIDDI GROUP" },
+  description: fr.description,
   openGraph: {
     type: "website",
-    locale: "fr_CM",
-    siteName: company.name,
+    siteName: contact.name,
     images: [{ url: asset("/images/hero-corridor.png"), width: 1376, height: 768, alt: "DIDDI GROUP" }],
   },
   icons: { icon: asset("/logo-diddi-group.png") },
@@ -29,11 +27,14 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: company.legalName,
-  url: company.url,
-  logo: `${company.url}/logo-diddi-group.png`,
-  email: company.email,
-  telephone: company.phone,
+  name: contact.legalName,
+  url: contact.url,
+  logo: `${contact.url}/logo-diddi-group.png`,
+  foundingDate: String(contact.founded),
+  founder: { "@type": "Person", name: contact.president },
+  email: contact.email,
+  telephone: contact.phone,
+  sameAs: [contact.facebook],
   address: {
     "@type": "PostalAddress",
     streetAddress: "Grand Marché",
@@ -41,15 +42,14 @@ const jsonLd = {
     addressRegion: "Est",
     addressCountry: "CM",
   },
+  subOrganization: fr.subsidiaries.map((s) => ({ "@type": "Organization", name: s.name })),
 };
 
+// Layout commun aux deux langues ; la langue du document est ajustée côté client (Header).
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr" className={`${manrope.variable} ${inter.variable}`}>
       <body>
-        <a href="#contenu" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded focus:bg-white focus:px-4 focus:py-2">
-          Aller au contenu
-        </a>
         <Header />
         <main id="contenu">{children}</main>
         <Footer />

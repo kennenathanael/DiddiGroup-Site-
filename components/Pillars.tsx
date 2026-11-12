@@ -1,4 +1,4 @@
-import { engagement } from "@/content/site";
+import type { Content } from "@/content";
 import Reveal from "./Reveal";
 
 const icons: Record<string, React.ReactNode> = {
@@ -7,10 +7,10 @@ const icons: Record<string, React.ReactNode> = {
   impact: <path d="M12 21V11m0 0c0-4 3-7 7-7 0 4-3 7-7 7Zm0 0C12 7 9 4 5 4c0 4 3 7 7 7Z" />,
 };
 
-export default function Pillars({ onDark = false }: { onDark?: boolean }) {
+export default function Pillars({ pillars, onDark = false }: { pillars: Content["engagement"]["pillars"]; onDark?: boolean }) {
   return (
     <div className="grid gap-px overflow-hidden rounded-lg md:grid-cols-3" style={{ background: onDark ? "rgba(255,255,255,0.12)" : "var(--color-line)" }}>
-      {engagement.pillars.map((p, i) => (
+      {pillars.map((p, i) => (
         <Reveal key={p.key} delay={i * 0.1} className={onDark ? "bg-ink/80 p-8 backdrop-blur" : "bg-white p-8"}>
           <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={onDark ? "text-sand" : "text-green"} aria-hidden>
             {icons[p.key]}

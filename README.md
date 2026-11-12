@@ -16,24 +16,26 @@ npm run build
 Le site statique est généré dans `out/`.
 
 ## Modifier le contenu
-Tous les textes, chiffres, secteurs, filiales, produits et actualités se trouvent dans **`content/site.ts`**.
-- Une valeur placée entre `[… — à compléter]` s'affiche sur le site comme un cadre doré « à compléter ».
-- Pour remplacer une image, déposez la nouvelle dans `public/images/` sous le même nom de fichier.
-- Pour ajouter une actualité, ajoutez un objet dans le tableau `news`. La page de l'article est générée automatiquement.
+Le site est **bilingue** : le français est à la racine (`/`), l'anglais sous `/en`.
+- Textes français : **`content/fr.ts`**. Textes anglais : **`content/en.ts`**. Les deux fichiers ont la même structure et doivent rester alignés.
+- Coordonnées communes (téléphone, email, Facebook…) : `content/shared.ts`.
+- Les pages (`app/**/page.tsx` et `app/en/**/page.tsx`) sont de simples enveloppes : la mise en page de chaque page se trouve dans `components/views/`.
+- Logos : `public/logos/filiales/` et `public/logos/marques/`. Photos : `public/images/`. Pour remplacer un fichier, gardez le même nom.
+- Pour ajouter une actualité, ajoutez un objet dans `news`, dans les deux langues. La page de l'article est générée automatiquement.
 
-La liste complète des informations manquantes est dans **`A-COMPLETER.md`**.
+La liste des informations encore manquantes est dans **`A-COMPLETER.md`**.
 
-## Pages
+## Pages (FR, et la même chose sous /en)
 | Route | Contenu |
 |---|---|
 | `/` | Accueil |
-| `/le-groupe` | Histoire, engagement, gouvernance, nouveau siège |
-| `/activites` et `/activites/[secteur]` | Les 9 pôles d'activité |
-| `/filiales` | Les 9 filiales |
-| `/produits` | Les familles de produits |
+| `/le-groupe` | Mot du Président, mission/vision/valeurs, histoire, engagement, implantations, nouveau siège |
+| `/activites` et `/activites/[secteur]` | Les 8 pôles d'activité |
+| `/filiales` | Les 9 filiales et la coopérative DEMRI YONO |
+| `/produits` | Les marques du groupe et les marques partenaires |
 | `/actualites` et `/actualites/[article]` | Les actualités |
-| `/carrieres` | Carrières et candidature spontanée |
-| `/contact` | Formulaire (via Formspree ou messagerie), adresses et carte |
+| `/carrieres` | Carrières |
+| `/contact` | Formulaire, adresses, horaires et carte |
 | `/mentions-legales`, `/confidentialite` | Pages légales |
 
 ## Déploiement (GitHub Pages)

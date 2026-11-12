@@ -1,57 +1,28 @@
 # À compléter — site DIDDI GROUP
 
-Sur le site, chaque information manquante s'affiche dans un **cadre doré en pointillés**. Toutes les données se modifient dans [`content/site.ts`](content/site.ts).
+Le contenu a été mis à jour à partir du questionnaire rempli par la Direction (novembre 2026).
+Il se trouve dans `content/fr.ts` (français) et `content/en.ts` (anglais). Ces deux fichiers doivent toujours rester alignés.
 
-## 1. Identité et légal
-| Page | Champ | Info attendue |
-|---|---|---|
-| Mentions légales | Capital, RCCM, NIU | Données du registre de commerce de DIDDI GROUP SA |
-| Mentions légales | Directeur de la publication | Nom et fonction |
-| Mentions légales | Hébergeur | Nom, adresse et contact |
-| Confidentialité | Référence de la loi | Faire valider la mention de la loi n° 2024/017 par le service juridique |
-| Partout | Logo | **Version vectorielle (SVG, AI ou PDF)**. L'actuel est un PNG de 263×99 px |
-| Pied de page | Réseaux sociaux | URL LinkedIn et Facebook (`company.socials`) |
-| Bouton WhatsApp | Numéro | Confirmer que le 672 87 00 85 est bien sur WhatsApp |
+## Encore manquant
+| Où | Information |
+|---|---|
+| Mentions légales | Capital social, numéro RCCM, NIU (laissés vides dans le questionnaire) |
+| Pied de page | Lien exact de la page LinkedIn « Diddi Group » (seul le nom a été donné) |
+| Marques | Logos de **Diddi Gold** et de **Farine Bijou** (le nom s'affiche en attendant) |
+| Filiales | Logos en bonne qualité : ceux du site sont découpés dans l'organigramme fourni, en basse résolution |
+| Filiales | Année de création d'ATR SARL |
+| Logo du groupe | Version vectorielle (SVG, AI ou PDF) |
+| Actualités | Dates exactes des articles « TLR / tracteurs Sinotruk » et « Nouveau siège » (elles ne sont pas affichées pour l'instant) |
 
-## 2. Textes à valider par la Direction
-- Slogan **« Driven by tomorrow »** (`company.tagline`)
-- Texte « Notre engagement » et ses 3 piliers (`engagement`)
-- Les listes « Savoir-faire » de chaque secteur (`sectors[].expertise`). Ce sont des formulations génériques.
-- Le titre du hero : « Bâtir aujourd'hui l'économie africaine de demain. »
+## Volontairement non publié (consigne 7.1 de la Direction)
+- L'objectif de chiffre d'affaires de Golden Petroleum et le coût du projet de raffinerie.
+- Le nombre et la date d'ouverture des futures stations Golden Petroleum.
+- La suspension des activités minières en RCA, et le projet de scierie (encore en structuration).
+- La composition de l'équipe dirigeante, en attendant la fin de la réorganisation.
 
-## 3. Le Groupe
-- Année de création et étapes clés de la frise historique (`app/le-groupe/page.tsx`)
-- Mission, Vision, Valeurs
-- Président / DG : nom, fonction, **photo officielle** et mot du Président
-- Second pays d'implantation (page d'accueil, section « Implantations »)
+## Images
+Toutes les photos sont des **illustrations générées par IA**. Il faudra les remplacer par de vraies photos, en gardant le même nom de fichier dans `public/images/`.
 
-## 4. Filiales et activités
-- Noms des 9 filiales (seule **TLR Sarl** est connue), avec secteur et pays (`subsidiaries`)
-- Nom de la filiale pour chaque secteur : sucre, café, agroalimentaire, import-export, pétrole, mines, forêt (`sectors[].subsidiary`)
-- Détails du projet « Industrie de transformation »
-
-## 5. Produits
-- Marques, formats et photos pour : sucre, café, produits agroalimentaires, produits pétroliers
-
-## 6. Actualités
-- Dates exactes des articles « TLR Sarl / tracteurs Sinotruk » et « Nouveau siège »
-- Surface et date d'inauguration du nouveau siège
-- Textes complets et vraies photos des articles
-
-## 7. Carrières
-- Offres d'emploi en cours
-
-## 8. Images
-Les images actuelles sont **générées par IA (illustrations)**. Il faut les remplacer par de vraies photos dès que possible, en gardant le même nom de fichier dans `public/images/`.
-
-Ces images n'ont pas encore pu être générées : le quota de crédits Figma AI est épuisé et se réinitialise le 23/10/2026. En attendant, un visuel de remplacement aux couleurs du groupe s'affiche.
-- `petrole-station`, `petrole-depot` → Distribution pétrolière
-- `mines` → Exploitation minière
-- `foret`, `foret-exploitation` → Exploitation forestière
-- `impact-communaute`, `formation-commerciale`, `carrieres`, `cafe-plantation`, `agro-transformation`, `industrie-avenir`
-
-Les prompts de ces images sont dans `PROMPT-DIDDI-GROUP.md`, section 6.
-
-## 9. Technique
-- **Formulaire de contact** : le site est statique (GitHub Pages), donc sans serveur. Pour recevoir les messages par email, créez un formulaire gratuit sur formspree.io, puis ajoutez son URL (ex. `https://formspree.io/f/xxxx`) dans GitHub : *Settings → Secrets and variables → Actions → Variables*, sous le nom `FORM_ENDPOINT`. Sans cette URL, le bouton « Envoyer » ouvre la messagerie du visiteur avec le message pré-rempli. Pour les candidatures, le CV est envoyé directement par email.
-- **Version anglaise** : pas encore faite. Tout le contenu est centralisé dans `content/site.ts`, ce qui permet d'ajouter une version EN.
+## Technique
+- **Formulaire de contact** : sans configuration, « Envoyer » ouvre la messagerie du visiteur avec le message pré-rempli. Pour recevoir les messages directement sur contact@diddi-group.com : créez un formulaire gratuit sur formspree.io, puis ajoutez son URL dans GitHub, dans *Settings → Secrets and variables → Actions → Variables*, sous le nom `FORM_ENDPOINT`.
+- **Validation** : le site doit être validé par Ahmadou Mohamadou (Douala) ou Ousmanou (Abidjan), avec l'approbation préalable du PDG.
