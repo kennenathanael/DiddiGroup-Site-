@@ -6,7 +6,7 @@ Il se trouve dans `content/fr.ts` (français) et `content/en.ts` (anglais). Ces 
 ## Encore manquant
 | Où | Information |
 |---|---|
-| Mentions légales | Capital social, numéro RCCM, NIU (laissés vides dans le questionnaire) |
+| Mentions légales | NIU (le capital et le RCCM ont été reçus le 14/11/2026) |
 | Pied de page | Lien exact de la page LinkedIn « Diddi Group » (seul le nom a été donné) |
 | Marques | Logos de **Diddi Gold** et de **Farine Bijou** (le nom s'affiche en attendant) |
 | Filiales | Logos en bonne qualité : ceux du site sont découpés dans l'organigramme fourni, en basse résolution |

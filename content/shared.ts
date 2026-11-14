@@ -30,6 +30,8 @@ export const contact = {
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://diddi-group.com",
   president: "Oumarou Mohamadou",
   publicationDirector: "Ahmadou Mohamadou",
+  rccm: "CM-DLA-02-2026-B14-00008",
+  capital: { fr: "500 000 000 FCFA", en: "XAF 500,000,000" },
   facebook: "https://www.facebook.com/share/1KbGxoFT26/?mibextid=wwXIfr",
   headOfficeMap: "Garoua-Boulaï, Cameroun",
   operationalOfficeMap: "Bonapriso, Douala, Cameroun",

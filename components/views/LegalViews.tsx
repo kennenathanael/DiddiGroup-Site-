@@ -18,7 +18,7 @@ export function MentionsView({ lang }: { lang: Lang }) {
           <h2>Publisher</h2>
           <p>
             The website {domain} is published by {contact.legalName}, a public limited company incorporated under Cameroonian law and governed by the OHADA Uniform Act,
-            with share capital of <Todo>{todo}</Todo>, registered with the Trade and Personal Property Credit Register (RCCM) under number <Todo>{todo}</Todo>, tax ID (NIU) <Todo>{todo}</Todo>.
+            with share capital of {contact.capital.en}, registered with the Trade and Personal Property Credit Register (RCCM) under number {contact.rccm}, tax ID (NIU) <Todo>{todo}</Todo>.
           </p>
           <p className="mt-3">Head office: {hq}.<br />Operational office: {office}.<br />Phone: {contact.phone} · Email: {contact.email}</p>
         </div>
@@ -40,7 +40,7 @@ export function MentionsView({ lang }: { lang: Lang }) {
         <h2>Éditeur du site</h2>
         <p>
           Le site {domain} est édité par {contact.legalName}, société anonyme de droit camerounais régie par l&apos;Acte uniforme OHADA,
-          au capital de <Todo>{todo}</Todo>, immatriculée au RCCM sous le numéro <Todo>{todo}</Todo>, NIU <Todo>{todo}</Todo>.
+          au capital de {contact.capital.fr}, immatriculée au RCCM sous le numéro {contact.rccm}, NIU <Todo>{todo}</Todo>.
         </p>
         <p className="mt-3">Siège social : {hq}.<br />Bureau opérationnel : {office}.<br />Téléphone : {contact.phone} · Email : {contact.email}</p>
       </div>
